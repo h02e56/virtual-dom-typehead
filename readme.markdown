@@ -18,6 +18,8 @@ using:
 
 After use twitter [typehead.js](https://github.com/twitter/typeahead.js/) and take a look on all this virtual dom stuff(react, etc) I want something to practice.
 
+[demo](http://h02e56.com/virtual-dom-typehead/)
+
 # quick start
 
 ```
