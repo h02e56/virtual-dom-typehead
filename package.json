@@ -1,0 +1,36 @@
+{
+  "name": "virtual-dom-typehead",
+  "scripts": {
+    "dev": "npm run watch & npm node browser-sync.js",
+    "build": "browserify main.js | uglifyjs -c -o dist/bundle.js -v",
+    "test": "standard main.js && browserify public/test.js > public/test.browser.js -v && node browser-sync.js",
+    "watch": "watchify main.js -o public/test.browser.js -dv"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "dependencies": {
+    "babel": "^5.6.23",
+    "babel-eslint": "^3.1.23",
+    "babelify": "^6.1.2",
+    "browserify": "^11.0.1",
+    "debounce": "^1.0.0",
+    "dom-delegator": "^13.1.0",
+    "es6-promise": "^2.3.0",
+    "isomorphic-fetch": "2.1.0",
+    "main-loop": "^3.1.0",
+    "uglifyjs": "~2.4.10",
+    "virtual-dom": "~2.0.1",
+    "watchify": "^3.3.1",
+    "xtend": "^4.0.0"
+  },
+  "license": "public domain",
+  "devDependencies": {
+    "standard-format": "^1.6.0"
+  }
+}
