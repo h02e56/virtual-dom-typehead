@@ -20,6 +20,11 @@ After use twitter [typehead.js](https://github.com/twitter/typeahead.js/) and ta
 
 [demo](http://h02e56.com/virtual-dom-typehead/)
 
+TODO:
+Show selected suggestion inside input with some transparent text
+Set max number of suggestions we show
+Check debounce, and what to do long list
+
 # quick start
 
 ```
